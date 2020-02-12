@@ -3,3 +3,5 @@
 images/
 __pycache__/
 *.avi
+*,v
+

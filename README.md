@@ -66,13 +66,17 @@ The code in this project is distributed under the MIT License.
 ## Modification (Under Developing)
 I'm trying to use converted models with cv2.dnn.readNetFromModelOptimizer()
 
+Parsing part of `outs = net.forward(layer_names)` must be same in cv2.dnn.readNetFrom*() functions.
+
 ### requirements
-- OpenVino must be installed
-- OpenCV must be build with Inel OpenVino Inference Engine.
+- OpenVino must be installed.
+- OpenCV must be build with Intel OpenVino Inference Engine.
 
 ```
 DWITH_INF_ENGINE=ON
 DENABLE_CXX11=ON
 ```
 
-- 
+- I would be happy if someone make opencv-python package with inference engine.
+
+-
